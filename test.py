@@ -12,6 +12,16 @@ def test_devide():
     result = 0.5
     assert devide(a,b) == result
 
+def test_devide_zero():
+    a = 2
+    b = 0
+    try:
+        sum(a,b)
+        assert False
+    except ValueError as e:
+        print("Test (zero-devision) passed")
+
 if __name__ == "__main__":
     test_devide()
     test_sum()
+    test_devide_zero()
