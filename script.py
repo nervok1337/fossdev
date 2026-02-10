@@ -6,6 +6,11 @@ def devide(a,b):
         raise ValueError("Denominator could not be zero")
     if isinstance(a,str) or isinstance(b,str):
         raise ValueError("Could not devide string")
+    if isinstance(a,list) or isinstance(b,list):
+        raise ValueError("Could not devide lists")
+    
     return a / b
+
+
 
 
