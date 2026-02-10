@@ -19,6 +19,11 @@ def test_devision_prohibited():
         assert False
     except ValueError as e:
         print("Test list-division passed")
+    try:
+        devide("A","B")
+        assert False
+    except ValueError as e:
+        print("Test string-devision passed")
 
 def test_devide_zero():
     a = 8
@@ -28,13 +33,6 @@ def test_devide_zero():
         assert False
     except ValueError as e:
         print("Test (zero-devision) passed")
-
-def test_devision_prohibited():
-    try:
-        devide("A","B")
-        assert False
-    except ValueError as e:
-        print("Test string-devision passed")
 
 if __name__ == "__main__":
     test_devide()
