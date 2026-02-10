@@ -16,7 +16,7 @@ def test_devide_zero():
     a = 8
     b = 0
     try:
-        sum(a,b)
+        devide(a,b)
         assert False
     except ValueError as e:
         print("Test (zero-devision) passed")
