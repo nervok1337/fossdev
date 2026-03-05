@@ -14,7 +14,9 @@ from math_demo import (
 # }
 
 # [DONE] Тесты не должны использовать ВСЕ наборы входных параметров
-# Тесты должны покрывать "кластеры" входных параметров
+# [DONE] Тесты должны покрывать "кластеры" входных параметров
+# [DONE] Тестовые функции должны тестировать логические блоки
+
 # Тесты должны обнаруживать ошибки (perscide paradox)
 # Тесты покрывают как успешные так и ошибочные кейсы
 
@@ -53,10 +55,16 @@ def test_addition_clusters():
     assert add(0, -2) == -2
     print("Test clusters passed")
 
+def test_addition_commutative():
+    assert add(9, 5) == 14
+    assert add(5, 9) == 14
+    print("tests commutative passed")
+
 if __name__ == "__main__":
     test_addition()
     test_addition_with_bug()
     test_addition_duplicate()
     # test_additional_overkill() # can try it on your risk
     test_addition_clusters()
+    test_addition_commutative()
 
