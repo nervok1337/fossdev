@@ -8,8 +8,10 @@ from math_demo import (
 # [DONE] Ранее тестирование позволяет сэкономить время позднее
 # [DONE] Тесты показывают наличие ошибок, а не их отсутствие
 
-# [DONE] Тесты не должны дублировать логику тестируемого кода
-# [DONE] Тесты не должны делать предположения о внутреннем устройстве кода
+# {
+#   [DONE] Тесты не должны дублировать логику тестируемого кода
+#   [DONE] Тесты не должны делать предположения о внутреннем устройст ве кода
+# }
 
 # [DONE] Тесты не должны использовать ВСЕ наборы входных параметров
 # Тесты должны покрывать "кластеры" входных параметров
@@ -41,8 +43,20 @@ def test_addition_overkill():
             assert add(-i, -j) == -i - j
             assert add(i, -j) == i-j
 
+def test_addition_clusters():
+    assert add(7, 6) == 13
+    assert add(0, 6) == 6
+    assert add(7, 0) == 7
+    assert add(10, -11) == -1
+    assert add(-10, -11) == -21
+    assert add(-5, 0) == -5
+    assert add(0, -2) == -2
+    print("Test clusters passed")
+
 if __name__ == "__main__":
     test_addition()
     test_addition_with_bug()
     test_addition_duplicate()
-    # test_additional_overkill() #can try it on your risk
+    # test_additional_overkill() # can try it on your risk
+    test_addition_clusters()
+
