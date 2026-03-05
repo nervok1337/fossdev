@@ -2,7 +2,9 @@
 
 from math_demo import (
     add,
-    add_with_bug
+    add_with_bug,
+    calculate_tax_bugged,
+    calculate_tax
 )
 
 # [DONE] Ранее тестирование позволяет сэкономить время позднее
@@ -17,7 +19,7 @@ from math_demo import (
 # [DONE] Тесты должны покрывать "кластеры" входных параметров
 # [DONE] Тестовые функции должны тестировать логические блоки
 
-# Тесты должны обнаруживать ошибки (perscide paradox)
+# [DONE] Тесты должны обнаруживать ошибки (perscide paradox)
 # Тесты покрывают как успешные так и ошибочные кейсы
 
 def test_addition():
@@ -29,13 +31,13 @@ def test_addition():
 def test_addition_with_bug():
     assert add_with_bug(2,2) == 4
     assert add_with_bug(0,0) == 0
-    print("test bugged addition passed")
+    print("Test bugged addition passed")
     # finally we found data that make test reliable
     # assert add_with_bug(7,6) == 13 # will fail here 
 
 def test_addition_duplicate():
     assert add(6,7) == 6+7
-    print("test duplicate addition passed")
+    print("Test duplicate addition passed")
 
 def test_addition_overkill():
     for i in range(0, 2**32):
@@ -58,7 +60,27 @@ def test_addition_clusters():
 def test_addition_commutative():
     assert add(9, 5) == 14
     assert add(5, 9) == 14
-    print("tests commutative passed")
+    print("Tests commutative passed")
+
+def test_tax_calculator_pesticide():
+    assert calculate_tax_bugged(1000) == 150
+    assert calculate_tax_bugged(100) == 15
+    assert calculate_tax_bugged(10) == 1.5
+    assert calculate_tax_bugged(1) == 0.15
+    assert calculate_tax_bugged(234) == 35.1
+    print("Test tax calculator passed")
+    # float may give us test cases
+    # not available when using int
+    # assert calculate_tax_bugged(2.34) == 0.35 # 0.351
+
+def test_tax_calculator():
+    assert calculate_tax(1000) == 150
+    assert calculate_tax(100) == 15
+    assert calculate_tax(10) == 1.5
+    assert calculate_tax(1) == 0.15
+    assert calculate_tax(234) == 35.1
+    print("Test unbugged tax calculator passed")
+    assert calculate_tax(2.34) == 0.35 # 0.351
 
 if __name__ == "__main__":
     test_addition()
@@ -67,4 +89,6 @@ if __name__ == "__main__":
     # test_additional_overkill() # can try it on your risk
     test_addition_clusters()
     test_addition_commutative()
+    test_tax_calculator()
+    test_tax_calculator_pesticide()
 
