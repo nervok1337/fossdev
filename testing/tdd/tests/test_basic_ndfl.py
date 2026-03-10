@@ -6,6 +6,8 @@
 # | **20 – 50 млн руб.** | 20% | 3 402 000 + 20% с суммы превышения |
 # | **Свыше 50 млн руб.** | 22% | 9 402 000 + 22% с суммы превышения |
 
+# TODO make test to obey principles
+
 from ndfl import calculate_ndfl
 
 def test_ndfl_tier_1_basic():
