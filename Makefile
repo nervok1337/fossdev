@@ -9,6 +9,9 @@ endif
 	mkdir -p $(PRACTICE)
 
 remove-practice:
+ifndef PRACTICE
+	$(error must pass val via PRACTICE)
+endif
 	rm -rf $(PRACTICE)
 
 # 	mkdir demo-practice/src
