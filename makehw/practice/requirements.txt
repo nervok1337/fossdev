@@ -1,0 +1,6 @@
+mypy
+types-requests
+numpy
+fastapi
+requests
+black
