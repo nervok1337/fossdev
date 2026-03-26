@@ -1,4 +1,4 @@
-.PHONY: install typecheck run check-requirements clean format lint check
+.PHONY: install typecheck run check-requirements clean format lint checkq
 
 check: typecheck check-requirements lint
 
