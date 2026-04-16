@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.5.2 Safari/537.36" version="29.6.1">
   <diagram name="Страница-1" id="soZkWNeOSU0mvrYDbcu1">
-    <mxGraphModel dx="1049" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="338" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,10 +127,10 @@
             <mxPoint x="350" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="K_RKNQTWKX81upYdOPVk-55" parent="1" style="shape=mxgraph.signs.healthcare.wheelchair_accessible_2;html=1;pointerEvents=1;fillColor=#eeeeee;strokeColor=#36393d;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;aspect=fixed;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Sender&lt;/font&gt;" vertex="1">
+        <mxCell id="K_RKNQTWKX81upYdOPVk-55" parent="1" style="shape=mxgraph.signs.healthcare.wheelchair_accessible_2;html=1;pointerEvents=1;fillColor=#6a00ff;strokeColor=#3700CC;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;aspect=fixed;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Sender&lt;/font&gt;" vertex="1">
           <mxGeometry height="140" width="124.29" x="51.760000000000005" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="K_RKNQTWKX81upYdOPVk-56" parent="1" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#eeeeee;strokeColor=#36393d;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;aspect=fixed;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Recipient&lt;/font&gt;" vertex="1">
+        <mxCell id="K_RKNQTWKX81upYdOPVk-56" parent="1" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#a0522d;strokeColor=#6D1F00;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;aspect=fixed;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Recipient&lt;/font&gt;" vertex="1">
           <mxGeometry height="110" width="173.87" x="6.129999999999999" y="520" as="geometry" />
         </mxCell>
         <mxCell id="K_RKNQTWKX81upYdOPVk-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Get available&lt;/span&gt;" vertex="1">
@@ -214,6 +214,9 @@
             <mxPoint x="120" y="980" as="sourcePoint" />
             <mxPoint x="200" y="1030" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="K_RKNQTWKX81upYdOPVk-71" parent="1" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.automation;fillColorStyles=fillColor2,fillColor3,fillColor4;fillColor2=#032d60;fillColor3=#0d9dda;fillColor4=#ffffff;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#ffffff;portConstraintRotation=0;collapsible=0;rotatable=1;flipH=1;legacyAnchorPoints=0;" value="" vertex="1">
+          <mxGeometry height="58.199999999999996" width="60" x="63.07" y="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
